@@ -1,4 +1,7 @@
 # build
+
+[![Build Status](https://travis-ci.org/herohde/build.svg?branch=master)](https://travis-ci.org/herohde/build)
+
 Build is a small utility for compile-time major.minor.micro versioning
 with additional linker hooks for git commit tree size and hash, such as
 "1.4.2.120.4f54bc3d". The benefit of the commit tree size is that it is
