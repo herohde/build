@@ -9,7 +9,7 @@ both identify the exact commit and prevent collisions between brances.
 
 Define the desired version and log it on startup, say:
 ```
-var version = build.New(1, 4, 2)
+var version = build.NewVersion(1, 4, 2)
 
 func main() {
    log.Printf("Foo %v", version)

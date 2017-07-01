@@ -32,8 +32,8 @@ func (v Version) String() string {
 	return fmt.Sprintf("%d.%d.%d.%s.%s", v.Major, v.Minor, v.Micro, v.Tree, v.Hash)
 }
 
-// New creates a build version using the global GitTree and GitHash variables,
+// NewVersion creates a build version using the global GitTree and GitHash variables,
 // which are expected to be defined externally as linker arguments.
-func New(major, minor, micro int) Version {
+func NewVersion(major, minor, micro int) Version {
 	return Version{major, minor, micro, GitTree, GitHash}
 }
