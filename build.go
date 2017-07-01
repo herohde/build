@@ -4,9 +4,11 @@ package build
 import "fmt"
 
 var (
-	// GitTree is to be defined by a linker argument as the result of "git rev-list HEAD | wc -l".
+	// GitTree is to be defined by a linker argument as the result of
+	// "git rev-list HEAD | wc -l | tr -d '[[:space:]]'".
 	GitTree = "0"
-	// GitHash is to be defined by a linker argument as the result of "git rev-parse --short HEAD".
+	// GitHash is to be defined by a linker argument as the result of
+	// "git rev-parse --short HEAD".
 	GitHash = "nohash"
 )
 

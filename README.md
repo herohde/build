@@ -19,7 +19,7 @@ func main() {
 
 Add the following flags to `go build` and `go install`:
 ```
--ldflags "-X github.com/herohde/build.GitTree `git rev-list HEAD | wc -l` -X github.com/herohde/build.GitHash `git rev-parse --short HEAD`"
+-ldflags "-X github.com/herohde/build.GitTree=`git rev-list HEAD | wc -l | tr -d '[[:space:]]'` -X github.com/herohde/build.GitHash=`git rev-parse --short HEAD`"
 ```
 
 ## License
