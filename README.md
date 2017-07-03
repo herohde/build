@@ -1,6 +1,6 @@
 # build
 
-[![Build Status](https://travis-ci.org/herohde/build.svg?branch=master)](https://travis-ci.org/herohde/build)
+[![Build Status](https://travis-ci.org/seekerror/build.svg?branch=master)](https://travis-ci.org/seekerror/build)
 
 Build is a small utility for compile-time major.minor.micro versioning
 with additional linker hooks for git commit tree size and hash, such as
@@ -22,7 +22,7 @@ func main() {
 
 Add the following flags to `go build` and `go install`:
 ```
--ldflags "-X github.com/herohde/build.GitTree=`git rev-list HEAD | wc -l | tr -d '[[:space:]]'` -X github.com/herohde/build.GitHash=`git rev-parse --short HEAD`"
+-ldflags "-X github.com/seekerror/build.GitTree=`git rev-list HEAD | wc -l | tr -d '[[:space:]]'` -X github.com/seekerror/build.GitHash=`git rev-parse --short HEAD`"
 ```
 
 ## License
